@@ -57,3 +57,6 @@ nbproject
 /tools/
 /website/
 .temp
+
+public/var/assets
+public/var/tmp

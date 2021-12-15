@@ -1,12 +1,12 @@
 parameters:
-    secret: ThisTokenIsNotSoSecretChangeIt
+    secret: hKwzUVFPm28mhxqkoFdE9sORD31TgyZSMkakc6MA+mY=
     google_client_id: <google_client_id>
     google_client_secret: <google_client_secret>
     twitter_client_id: <twitter_client_id>
     twitter_client_secret: <twitter_client_secret>
     
     # use echo \Defuse\Crypto\Key::createNewRandomKey()->saveToAsciiSafeString(); to generate secret for data encryption
-    app_encryption_secret: "ThisTokenIsNotSoSecretChangeIt"
+    app_encryption_secret: "ZtRIcHaY036O1L8hrT1u6nRJmyj9Uxl+hzOrdjo7kSA="
 
     # customize the full path to external executables
     # normally they are auto-detected by `which program` or auto-discovered in the configured path in

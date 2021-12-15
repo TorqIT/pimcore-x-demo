@@ -60,6 +60,27 @@ class ContentController extends BaseController
     }
 
     /**
+     * The annotations below demonstrate the ResponseHeader annotation which can be
+     * used to set custom response headers on the auto-rendered response. At this point, the headers
+     * are not really set as we don't have a response yet, but they will be added to the final response
+     * by the ResponseHeaderListener.
+     *
+     * @ResponseHeader("X-Custom-Header", values={"Foo", "Bar"})
+     * @ResponseHeader("X-Custom-Header2", values="Bazinga", replace=true)
+     *
+     * @return Response
+     */
+    public function gravePortalAction()
+    {
+        // you can also set the header via code
+        $this->addResponseHeader('X-Custom-Header3', ['foo', 'bar']);
+
+        return $this->render('content/grave_portal.html.twig', [
+            'isPortal' => true
+        ]);
+    }
+
+    /**
      * @return Response
      */
     public function editableRoundupAction()

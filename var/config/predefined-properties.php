@@ -130,5 +130,18 @@ return [
         "inheritable" => TRUE,
         "creationDate" => 1566463224,
         "modificationDate" => 1566463592
+    ],
+    11 => [
+        "id" => 11,
+        "name" => "New Property",
+        "description" => NULL,
+        "key" => "new_key",
+        "type" => "text",
+        "data" => NULL,
+        "config" => "",
+        "ctype" => "object",
+        "inheritable" => FALSE,
+        "creationDate" => 1638997797,
+        "modificationDate" => 1638997809
     ]
 ];

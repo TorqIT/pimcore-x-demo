@@ -1,0 +1,44 @@
+{# @var graves Pimcore\Model\DataObject\GraveRecord\Listing #}
+
+
+{% extends 'layouts/irc_layout.html.twig' %}
+
+
+{% block content %}
+
+	<table id="grave">
+		<thead>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>E-Number</th>
+				<th>Status</th>
+				<th>Gender</th>
+				<th>Cemetery</th>
+				<th></th>
+
+			</tr>
+		</thead>
+		{%  for grave in graves %}
+			<tr>
+				<td>{{ grave.FirstName }}</td>
+				<td>{{ grave.LastName }}</td>
+				<td>{{ grave.ENumber }}</td>
+				<td>{{ grave.Status }}</td>
+				<td>{{ grave.Gender }}</td>
+				<td>{{ grave.getCemetery()[0].getObject().getName() }}</td>
+				<td>
+					<a href="#">View</a>
+				</td>
+
+			</tr>
+		{% endfor %}
+
+	</table>
+
+	<script type="text/javascript">
+		$("#grave").DataTable();
+	</script>
+
+
+{%  endblock %}

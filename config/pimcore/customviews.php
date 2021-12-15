@@ -101,6 +101,42 @@ return [
             "position" => "left",
             "sort" => "5",
             "expanded" => FALSE
+        ],
+        [
+            "treetype" => "object",
+            "name" => "Grave Records",
+            "icon" => "/bundles/pimcoreadmin/img/flat-white-icons/conference_call.svg",
+            "id" => 9,
+            "showroot" => TRUE,
+            "rootfolder" => "/GraveRecords",
+            "position" => "left",
+            "sort" => "5",
+            "classes" => "grave_record",
+            "expanded" => TRUE
+        ],
+        [
+            "treetype" => "object",
+            "name" => "Communities",
+            "icon" => "/bundles/pimcoreadmin/img/flat-white-icons/home.svg",
+            "id" => 10,
+            "showroot" => TRUE,
+            "rootfolder" => "/Communities",
+            "position" => "right",
+            "sort" => "5",
+            "classes" => "community",
+            "expanded" => TRUE
+        ],
+        [
+            "treetype" => "object",
+            "name" => "Cemeteries",
+            "icon" => "/bundles/pimcoreadmin/img/flat-white-icons/organization.svg",
+            "id" => 11,
+            "showroot" => TRUE,
+            "rootfolder" => "/Cemeteries",
+            "position" => "right",
+            "sort" => "5",
+            "classes" => "cemetery",
+            "expanded" => TRUE
         ]
     ]
 ];
